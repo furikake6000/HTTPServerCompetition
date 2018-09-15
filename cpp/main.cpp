@@ -209,12 +209,12 @@ int main(){
       continue;
     }
 
-    // UDP sending section
+    /*// UDP sending section
     if(sendto(udp_s, serve_json.dump().c_str(), serve_json.dump().size(), 0,
       (struct sockaddr *) &udp_addr, sizeof(udp_addr)) < 0) {
       perror("sendto(udp)");
       exit(1);
-    }
+    }*/
 
     // Finishing session
     close(http_c);
